@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+}
+
+main section > img {
+  width: 50%;
+  padding: 10%;
+  align-self: flex-start;
+}
+
+main .heroImage {
+  width: 100%;
+  margin-bottom: 20%;
+}
+main .heroImage img {
+  width: 100%;
+}
+main .imgDesktop {
+  display: none;
+}
+
+main h1 {
+  font-size: 45px;
+  color: hsl(0, 6%, 24%);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-bottom: 5%;
+  font-weight: 600;
+}
+
+main h1 span {
+  display: block;
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+
+main p {
+  padding: 0 6%;
+  color: hsl(0, 36%, 70%);
+  font-weight: 400;
+  margin-bottom: 7%;
+}
+
+main .inputBlock {
+  width: 100%;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .inputBox {
+  width: 80%;
+  border: 0.1px solid hsl(0, 36%, 70%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3%;
+  border-radius: 30px;
+}
+main .inputBox input {
+  border: none;
+  width: 90%;
+  padding: 4% 5%;
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 36%, 70%);
+  font-size: 16px;
+  font-weight: 300;
+  background: transparent;
+  outline: none;
+}
+main .inputBox input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+main .inputBox > img {
+  display: none;
+  width: 10%;
+}
+main .inputBox button {
+  padding: 4% 10%;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+main #errorMsg{
+  color: red;
+  display: none;
+}
+
+@media(min-width: 1440px){
+    main{
+        flex-direction: row;
+        height: 100%;
+    }
+    main .heroImage{
+        margin: 0;
+    }
+    main .heroImage img{
+        display: none;
+    }
+    main .imgDesktop{
+        display: block;
+        height: 100%;
+    }
+    main section{
+        height: 100%;
+        text-align: left;
+        align-items: center;
+        padding: 0 15% 0 5%;
+    }
+    main section img{
+        width: 40%;
+    }
+    main section .texts{
+        padding-left: 10%;
+        margin-top: 20%;
+    }
+    main section p{
+        padding: 0;
+    }
+
+    main section .inputBlock{
+      margin-top: 5%;
+      justify-content: flex-start;
+      padding-left: 10%;
+    }
+    main section .inputBlock button img{
+      width: 80%;
+    }
+    
+}
